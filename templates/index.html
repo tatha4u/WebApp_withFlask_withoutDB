@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Data Collector App </title>
+    <head>
+        <link href="../static/main.css" rel="stylesheet"/>
+    </head>
+      <body>
+        <div class="container">
+            <h1> Collecting Height </h1>
+            <h3> Please fill to find the statistics of height </h3>
+            <! defining the success.html as per json format so that flask can read it>
+            <form action="{{url_for('success')}}" method="POST">
+                <input title="Your email will be safe with us" placeholder="Please enter your email address" type="email" name="email_name" required> <br>
+                <input title="Your data will be safe with us" placeholder="Please enter your height in cm" type="number" min="20", max="250" name="height_name" required> <br>
+                <input title="Your data will be safe with us" placeholder="Please enter your weight in kg" type="number" step="any" min="1", max="500" name="weight_name" required> <br>
+                <button type="submit"> Submit </button>
+            </form>
+        </div>
+</body>
+</head>
+<body>
+
+</body>
+</html>
